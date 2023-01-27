@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Beaufort';
+    src: url('../fonts/Beaufort-Heavy.ttf')
+    format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spiegel';
+    src: url('../fonts/spiegel.ttf')
+    format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --font1: 'Beaufort', cursive;
+    --font2: 'Spiegel', cursive;
+
+    --cor1: #151AFF;
+    --cor2: #4170FB;
+    --cor3: #3BE357;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li {
+    display: block;
+    padding: 10px;
+}
+
+menu a {
+    text-decoration: none;
+}
