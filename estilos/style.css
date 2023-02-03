@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Beaufort';
     src: url('../fonts/Beaufort-Heavy.ttf')
@@ -17,6 +12,12 @@
     src: url('../fonts/spiegel.ttf')
     format('truetype');
     font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -33,15 +34,106 @@ html, body {
     width: 100vw;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    padding: 0px 10px;
+    width: 100vw;
+    z-index: 999;
+}
+
 ul {
     list-style-type: none;
 }
 
 ul > li {
     display: block;
-    padding: 10px;
+    padding: 20px;
+    transition: .3s;
 }
 
-menu a {
+ul > li:hover {
+    font-size: 1.3em;
+    background-color: rgb(83, 83, 83);
+}
+
+li a {
     text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 20px;
+    margin-bottom: 10px;
+    transition: .8s ease;
+    width: 100vh;
+    max-width: 250px;
+    height: 100vh;
+}
+
+
+.menu.active {
+    right: -100%;
+}
+
+
+input#hamburguer:checked ~label .hamburguer::after {
+    transform: rotate(225deg);
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+}
+
+input#hamburguer:checked ~label .hamburguer::before {
+    transform: rotate(-405deg);
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+}
+
+.hamburguer {
+    display: block;
+    position: relative;
+    float: right;
+    background-color: transparent;
+    border-radius: 10%;
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+}
+
+.hamburguer::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    background-color: white;
+    border-radius: 20px;
+    transition: 1s ease;
+    width: 70%;
+    height: 10%;
+}
+
+.hamburguer::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    background-color: white;
+    border-radius: 20px;
+    transition: 1s ease;
+    width: 40%;
+    height: 10%;
 }

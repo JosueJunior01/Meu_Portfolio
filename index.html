@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <menu>
+        <!-- Icone menu -->
+        <input type="checkbox" style="display: none;" name="hamburguer" id="hamburguer">
+        <label for="hamburguer">
+            <div class="hamburguer active"></div>
+        </label>
+        <menu class="menu active">
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre mim</a></li>
                 <li><a href="#">Habilidades</a></li>
                 <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contatos</a></li>
             </ul>
         </menu>
     </header>
     <main></main>
     <footer></footer>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
