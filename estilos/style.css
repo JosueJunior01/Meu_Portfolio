@@ -30,17 +30,26 @@
 }
 
 html, body {
+    text-align: justify;
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
 }
 
 header {
     position: fixed;
     top: 0;
-    background-color: #333;
+    background-color: #1b1b1b;
     padding: 0px 10px;
     width: 100vw;
     z-index: 999;
+}
+
+h1 {
+    font-family: var(--font1);
+}
+
+p, h2 {
+    font-family: var(--font2);
 }
 
 ul {
@@ -55,7 +64,7 @@ ul > li {
 
 ul > li:hover {
     font-size: 1.3em;
-    background-color: rgb(83, 83, 83);
+    background-color: #333;
 }
 
 li a {
@@ -68,18 +77,62 @@ menu {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #333;
+    background-color: #1b1b1b;
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
     padding: 100px 20px;
     margin-bottom: 10px;
     transition: .8s ease;
-    width: 100vh;
-    max-width: 250px;
+    width: 100vw;
+    max-width: 300px;
     height: 100vh;
 }
 
+#homeIntro {
+    padding-top: 50%;
+    background-color: var(--cor1);
+    height: 55vh;
+}
+
+#homeIntro h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+}
+
+#homeIntro h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    color: white;
+}
+
+#sobreMim {
+    height: 100vh;
+}
+
+#sobreMim article {
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+#sobreMim span {
+    display: flex;
+    background-color: #333;
+    border-radius: 50%;
+    align-items: center;
+    margin: 100px auto;
+    width: 180px;
+    height: 180px;
+}
+
+.container {
+    width: 96vw;
+    margin: auto;
+}
 
 .menu.active {
     right: -100%;
@@ -137,3 +190,4 @@ input#hamburguer:checked ~label .hamburguer::before {
     width: 40%;
     height: 10%;
 }
+
