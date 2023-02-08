@@ -24,6 +24,7 @@
     --font1: 'Beaufort', cursive;
     --font2: 'Spiegel', cursive;
 
+    --cor0: #1b1b1b;
     --cor1: #151AFF;
     --cor2: #4170FB;
     --cor3: #3BE357;
@@ -38,7 +39,8 @@ html, body {
 header {
     position: fixed;
     top: 0;
-    background-color: #1b1b1b;
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
     padding: 0px 10px;
     width: 100vw;
     z-index: 999;
@@ -46,31 +48,37 @@ header {
 
 h1 {
     font-family: var(--font1);
+    margin: 0px 10px 15px 10px;
 }
 
 p, h2 {
     font-family: var(--font2);
+    margin: 0px 10px 15px 10px;
 }
 
 ul {
     list-style-type: none;
 }
 
-ul > li {
+ul > a {
     display: block;
+    text-decoration: none;
     padding: 20px;
     transition: .3s;
 }
 
-ul > li:hover {
+ul > a:hover {
     font-size: 1.3em;
     background-color: #333;
 }
 
-li a {
-    text-decoration: none;
+li {
     color: white;
     font-weight: bolder;
+}
+
+section {
+    height: 100vh;
 }
 
 menu {
@@ -81,6 +89,7 @@ menu {
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
     padding: 100px 20px;
     margin-bottom: 10px;
     transition: .8s ease;
@@ -108,20 +117,45 @@ menu {
     color: white;
 }
 
-#sobreMim {
-    height: 100vh;
-}
-
 #sobreMim article {
-    padding-top: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 100px 10px 0px 10px;
     margin: auto;
 }
 
-#sobreMim span {
+#sobreMim article > h1, #habilidades h1, #projetos h1, #contatos h1 {
+    text-align: center;
+    color: var(--cor1);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+#h2Alinhamento1 {
+    position: relative;
+    top: 120px;
+    left: 15px;
+}
+
+#h2Alinhamento2 {
+    position: relative;
+    top: 120px;
+    left: 33px;
+}
+
+#h2Alinhamento3 {
+    position: relative;
+    top: 120px;
+    left: 38px;
+}
+
+#habilidades {
+    padding: 100px 10px 0px 10px;
+}
+
+#habilidades span {
     display: flex;
     background-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
     border-radius: 50%;
     align-items: center;
     margin: 100px auto;
@@ -129,9 +163,49 @@ menu {
     height: 180px;
 }
 
+#spanimagem1 {
+    background: url('../imagens/htmlecsslogo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#spanimagem2 {
+    background: url('../imagens/javascriptlogo.jpg') right bottom no-repeat;
+    background-size: cover;
+}
+
+#spanimagem3 {
+    background: url('../imagens/reactjslogo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+#projetos {
+    position: relative;
+    top: 90vh;
+    padding: 100px 10px 0px 10px;
+}
+
+#contatos {
+    position: relative;
+    top: 300vh;
+    background-color: var(--cor0);
+    border-top: 7px solid var(--cor1);
+    padding: 100px 10px 0px 10px;
+    height: 100vh;
+}
+
+#contatos h1 {
+    color: white;
+}
+
 .container {
-    width: 96vw;
+    display: block;
     margin: auto;
+    width: 96vw;
+}
+
+.caixasAlinhada {
+    padding-left: 14vw;
 }
 
 .menu.active {
@@ -191,3 +265,12 @@ input#hamburguer:checked ~label .hamburguer::before {
     height: 10%;
 }
 
+.caixaProjetos{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+}
