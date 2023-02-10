@@ -261,9 +261,14 @@ input#hamburguer:checked ~label .hamburguer::before {
     height: 10%;
 }
 
-.caixaProjetos {
-    display: inline-flex;
+.caixasAlinhada {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.caixaProjetos {
     background-color: #333;
     color: white;
     border-radius: 15px;
