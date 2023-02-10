@@ -203,10 +203,6 @@ menu {
     width: 96vw;
 }
 
-.caixasAlinhada {
-    padding-left: 14vw;
-}
-
 .menu.active {
     right: -100%;
 }
