@@ -34,6 +34,9 @@ html, body {
     text-align: justify;
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -75,10 +78,6 @@ ul > a:hover {
 li {
     color: white;
     font-weight: bolder;
-}
-
-section {
-    height: 100vh;
 }
 
 menu {
@@ -181,13 +180,13 @@ menu {
 
 #projetos {
     position: relative;
-    top: 90vh;
+    top: 90px;
     padding: 100px 10px 0px 10px;
 }
 
 #contatos {
     position: relative;
-    top: 300vh;
+    top: 300px;
     background-color: var(--cor0);
     border-top: 7px solid var(--cor1);
     padding: 100px 10px 0px 10px;
@@ -265,12 +264,30 @@ input#hamburguer:checked ~label .hamburguer::before {
     height: 10%;
 }
 
-.caixaProjetos{
+.caixaProjetos {
     display: inline-flex;
     flex-wrap: wrap;
     background-color: #333;
+    color: white;
+    border-radius: 15px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
     margin: 20px;
     width: 300px;
     height: 500px;
+    transition: 1s;
+}
+
+.caixaProjetos:hover {
+    background-color: #e6e6e6;
+    color: black;
+    border: 1px solid black;
+}
+
+.caixaProjetos h2 {
+    position: relative;
+    top: 50%;
+    left: 25%;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
