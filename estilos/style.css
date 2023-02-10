@@ -290,4 +290,5 @@ input#hamburguer:checked ~label .hamburguer::before {
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
+    height: 30px;
 }
