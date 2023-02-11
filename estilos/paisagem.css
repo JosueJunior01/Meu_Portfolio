@@ -1,1 +1,29 @@
 @charset "UTF-8";
+
+:root {
+    --font1: 'Beaufort', cursive;
+    --font2: 'Spiegel', cursive;
+
+    --cor0: #1b1b1b;
+    --cor1: #151AFF;
+    --cor2: #4170FB;
+    --cor3: #3BE357;
+}
+
+#homeIntro {
+    padding-top: 15%;
+    height: 40vh;
+}
+
+#homeIntro h1 {
+    font-size: 4.5em;
+    color: white;
+}
+
+#homeIntro h2 {
+    font-size: 2em;
+}
+
+#contatos {
+    height: 70vh;
+}
