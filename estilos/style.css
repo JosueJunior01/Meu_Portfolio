@@ -125,7 +125,7 @@ menu {
 #sobreMim article > h1, #habilidades h1, #projetos h1, #contatos h1 {
     text-align: center;
     color: var(--cor1);
-    font-size: 2.5em;
+    font-size: 2.1em;
     text-transform: uppercase;
     margin-bottom: 100px;
 }
@@ -191,10 +191,12 @@ menu {
     background-color: var(--cor0);
     border-top: 7px solid var(--cor1);
     padding: 100px 10px 0px 10px;
-    height: 100vh;
+    height: 50vh;
 }
 
 #contatos h1 {
+    position: relative;
+    top: 50px;
     color: white;
 }
 
@@ -293,4 +295,39 @@ input#hamburguer:checked ~label .hamburguer::before {
     font-weight: bolder;
     text-transform: uppercase;
     height: 30px;
+}
+
+.centralizar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divIcones {
+    display: inline-block;
+    background-color: #333;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0px 20px;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.divIcones:hover {
+    background-color: rgb(197, 197, 197);
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 10px;
+}
+
+.githubIcon {
+    background: white url('../assets/iconmonstr-github-3.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.linkdinIcon {
+    background: white url('../assets/iconmonstr-linkedin-3.svg') center center no-repeat;
+    background-size: cover;
 }
