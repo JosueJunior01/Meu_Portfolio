@@ -200,6 +200,12 @@ menu {
     color: white;
 }
 
+#contatos p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
 .container {
     display: block;
     margin: auto;
