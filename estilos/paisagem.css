@@ -10,6 +10,14 @@
     --cor3: #3BE357;
 }
 
+ul > a {
+    padding: 15px;
+}
+
+menu {
+    padding-top: 50px;
+}
+
 #homeIntro {
     padding-top: 15%;
     height: 40vh;
