@@ -1,0 +1,72 @@
+@charset "UTF-8";
+:root {
+    --font1: 'Beaufort', cursive;
+    --font2: 'Spiegel', cursive;
+
+    --cor0: #1b1b1b;
+    --cor1: #151AFF;
+    --cor2: #4170FB;
+    --cor3: #3BE357;
+    --cor4: rgb(241, 241, 241);
+    --cor5: rgb(41, 41, 41);
+}
+
+* {
+    transition: 1s;
+}
+
+
+.iconDiaNoite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.iconDiaNoite::before {
+    content: "\f186";
+    font-family: fontAwesome;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.body.dark {
+    background: var(--cor5);
+    
+}
+
+.body.dark .iconDiaNoite::before {
+    content: "\f185";
+}
+
+.body.dark header {
+    background: var(--cor4);
+}
+
+.body.dark .menu {
+    background: var(--cor4);
+    color: black;
+    
+}
+
+.body.dark ul > a {
+    color: black;
+    
+}
+
+.body.dark .hamburguer::after {
+    background: black;
+    
+}
+
+.body.dark .hamburguer::before {
+    background: black;
+    
+}
