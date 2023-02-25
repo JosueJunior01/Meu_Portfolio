@@ -1,32 +1,21 @@
 @charset "UTF-8";
 :root {
-    --font1: 'Beaufort', cursive;
-    --font2: 'Spiegel', cursive;
-
-    --cor0: #1b1b1b;
-    --cor1: #151AFF;
-    --cor2: #4170FB;
-    --cor3: #3BE357;
     --cor4: rgb(241, 241, 241);
     --cor5: rgb(41, 41, 41);
+    --cor6: #161616;
 }
-
-* {
-    transition: 1s;
-}
-
 
 .iconDiaNoite {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
-    background-color: #333;
+    background-color: var(--cor6);
     border-radius: 50%;
+    border: 1px solid white;
     cursor: pointer;
     width: 60px;
     height: 60px;
-    
 }
 
 .iconDiaNoite::before {
@@ -34,39 +23,61 @@
     font-family: fontAwesome;
     color: white;
     font-size: 30px;
-    
 }
 
 .body.dark {
-    background: var(--cor5);
-    
+    background: var(--cor5); 
+}
+
+.body.dark .iconDiaNoite {
+    background-color: #333;
 }
 
 .body.dark .iconDiaNoite::before {
     content: "\f185";
 }
 
-.body.dark header {
-    background: var(--cor4);
+.body.dark p {
+    color: white;
 }
 
-.body.dark .menu {
-    background: var(--cor4);
-    color: black;
-    
+.body.dark h1 {
+    color: white;
 }
 
-.body.dark ul > a {
-    color: black;
-    
+.body.dark #sobreMim article > h1 {
+    color: white;
 }
 
-.body.dark .hamburguer::after {
-    background: black;
-    
+.body.dark #habilidades h1 {
+    color: white;
 }
 
-.body.dark .hamburguer::before {
-    background: black;
-    
+.body.dark #habilidades h2 {
+    color: white;
+}
+
+.body.dark #projetos h1 {
+    color: white;
+}
+
+.body.dark #contatos h1 {
+    color: white;
+}
+
+.body.dark #homeIntro {
+    background-color: var(--cor6);
+}
+
+.body.dark #contatos {
+    border-top: 7px solid var(--cor6);
+}
+
+.body.dark .caixaProjetos {
+    background-color: #444444;
+}
+
+.body.dark .caixaProjetos:hover {
+    background-color: #707070;
+    color: #202020;
 }

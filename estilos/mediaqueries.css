@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --font1: 'Beaufort', cursive;
-    --font2: 'Spiegel', cursive;
-
-    --cor0: #1b1b1b;
-    --cor1: #151AFF;
-    --cor2: #4170FB;
-    --cor3: #3BE357;
-}
-
-
-/* Celulares*/
-@media screen and (min-width: 600px) and (max-width: 768px) {
-
-}
-
-
 /* Tablets*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .container1 article {
@@ -106,4 +89,13 @@
     .hamburguer {
         display: none;
     }   
+
+    .iconDiaNoite {
+        position: relative;
+        top: -14.5vh;
+        left: 40vw;
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
 }
