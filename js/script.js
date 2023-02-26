@@ -16,7 +16,7 @@ icon.addEventListener('click', () => {
 
 // Efeito de escrita
 new TypeIt(".animacao", {
-    speed: 50,
+    speed: 65,
     waitUntilVisible: true,
 })
     .type("Desemvol", { delay: 900 })
